@@ -15,13 +15,14 @@ public class RoseRemover extends BukkitRunnable{
 	
 	@Override
 	public void run() {
-		for(int i = roses.size() - 1; i <= 0; i--){
-			Item rose = roses.get(i);
-			if(rose.getTicksLived() > LIFETICKS){
-				rose.remove();
-				roses.remove(i);
-			}
-		}	
+		if(!roses.isEmpty())
+			for(int i = roses.size() - 1; i >= 0; i--){
+				Item rose = roses.get(i);
+				if(rose.getTicksLived() > LIFETICKS){
+					rose.remove();
+					roses.remove(i);
+				}
+			}	
 	}
 	
 	public void addRose(Item rose){
