@@ -1,0 +1,5 @@
+name: Precious Blood
+version: 0.1
+main: io.github.gelx_.preciousblood.PreciousBlood
+author: Gelx-
+description: "A simple plugin that shows blood when entities get hurt and drops roses when they die"
