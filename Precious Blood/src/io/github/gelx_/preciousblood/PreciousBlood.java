@@ -28,7 +28,7 @@ public class PreciousBlood extends JavaPlugin implements Listener{
 			if(getRealDamage((LivingEntity) evt.getEntity(), evt.getDamage()) == 0)
 				return;
 			
-			evt.getEntity().getWorld().playEffect( ((LivingEntity) evt.getEntity()).getEyeLocation(), Effect.STEP_SOUND, 52);
+			evt.getEntity().getWorld().playEffect( ((LivingEntity) evt.getEntity()).getEyeLocation(), Effect.STEP_SOUND, 152);
 		}
 	}
 	
